@@ -1,43 +1,29 @@
 def my_hash
-  # use the literal constructor to set the variable, my_hash, equal to a hash with key/value pairs of your choice.
-
-  
+  your_hash = {"key" => "value", "door" => "open"}
 end
 
-
 def shipping_manifest
-  # set a variable called `the_manifest`, equal to a hash
-  # fill that hash with key/value pairs that describe the following information: 
-  # We have 5 whale bone corsets, 2 porcelain vases and 3 oil paintings 
-
-
+  the_manifest = {"whale bone corsets" => 5, "porcelain vases" => 2, "oil paintings" => 3}
 end
 
 def retrieval
-  shipping_manifest = {
-                  "whale bone corsets" => 5, 
-                  "porcelain vases" => 2, 
-                  "oil paintings" => 3
-                 }
-
-  # Look up the value of the "oil paintings" key in the shipping_manifest hash below
-
+  hash = {"oil paintings" => 3}
+  hash["oil paintings"]
 end
 
 def adding
-  shipping_manifest = {
-                  "whale bone corsets" => 5, 
-                  "porcelain vases" => 2, 
-                  "oil paintings" => 3
-                 }
-  # add 2 muskets to the shipping_manifest hash below
-
-
-
-  # add 4 gun powder to the shipping_manifest hash below
-
-
-
-  # return the shipping_manifest hash below
-
+  the_manifest = {"whale bone corsets" => 5, "porcelain vases" => 2, "oil paintings" => 3}
+  the_manifest_two = {"muskets" => 2, "gun powder" => 4}
+  the_manifest.merge!(the_manifest_two)
 end
+# h1 = { "a" => 100, "b" => 200 }
+# h2 = { "b" => 254, "c" => 300 }
+# h1.merge!(h2)   #=> {"a"=>100, "b"=>254, "c"=>300}
+
+# h1 = { "a" => 100, "b" => 200 }
+# h2 = { "b" => 254, "c" => 300 }
+# h1.merge!(h2) { |key, v1, v2| v1 }
+#                 #=> {"a"=>100, "b"=>200, "c"=>300}
+
+# the_manifest_two = {"maskets" => 2, "gun powder" => 4}
+  # the_manifest.merge!(the_manifest_two)
